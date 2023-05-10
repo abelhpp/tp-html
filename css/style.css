@@ -1,0 +1,214 @@
+
+/* 
+Reset
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}  
+header, main, footer {
+    width: 90%; /* Establece el ancho relativo al 80% del ancho de la pantalla */
+    max-width: 1200px; /* Establece un ancho máximo para evitar que se extienda demasiado */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 13px; /* Paddin solo para ver cajas */
+}
+  
+
+
+/***** header  *****/
+
+header {
+    background-color: aquamarine;
+}
+
+header div {
+    background-color: blueviolet;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 220px;
+    /*vertical-align: middle;  alinear Vertical pero no anda */
+}
+
+.logo p {
+    font-size: 60px;
+    margin-right: 300px;
+}
+
+
+.logo img {
+    width: 120px;
+    vertical-align: middle;
+}
+/******* nav ********/
+
+nav {
+    min-height: 55px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-right: 290px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    display: block;
+    padding: 15px 26px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/****main*******/
+
+main {
+    
+    background-color: red;
+}
+
+main section {
+    width: 100;
+    padding: 11px;
+/*  margin: 0 auto; /* Centra pero no hace pero no da margen*/
+    background-color: rgb(246, 137, 137);    
+    text-align: center; /* Añade esta línea para centrar el contenido horizontalmente */
+}
+
+main #banner{
+    border: 1px solid black;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    padding-bottom: 30px;
+}
+
+main #banner img {
+    border: 3px solid rgb(163, 248, 89);
+    width: 93%;
+    display: block; /* Añade esta línea para ajustar correctamente los márgenes automáticos */
+    margin: 0 auto; /* Añade esta línea para centrar la imagen horizontalmente */
+}
+
+main #profesionales{
+    font-size: 18px;
+    background-color: rgba(255, 98, 0, 0.858);
+    border: 1px solid black;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    padding-bottom: 30px;
+}
+
+main section h2{
+    font-size: 30px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    background-color: rgb(255, 119, 0);
+    border-radius: 13px; /* Establece el radio de los bordes en 10px */
+}
+
+main #profesionales table{
+    /* padding-left: 34px; */
+    width: 100%;
+    /* padding-right: 40px; */
+    padding: 8px 3% 0 3%;
+    background-color: rgb(255, 119, 0);
+    border-radius: 13px; /* Establece el radio de los bordes en 10px */
+}
+
+main #servicios{
+    background-color: rgb(255, 187, 0);
+    border: 1px solid black;
+    border-radius: 25px;
+    padding-bottom: 30px;
+}
+
+main #servicios div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+main #servicios div .card {
+    background-color: rgba(220, 235, 83, 0.792);
+    border-radius: 25px;
+    width: 220px; /* Ancho fijo*/
+    margin: 10px;
+    height: 300px;
+    transition: all 0.3s ease; /* Agrega una transición suave */
+}
+
+main #servicios div .card:hover {
+    border: 2px solid #333; /* Aplica un borde al pasar el cursor sobre la tarjeta */
+    transform: scale(1.1); /* Aumenta el tamaño de la tarjeta al pasar el cursor sobre ella */
+}
+
+main #servicios div .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+  
+main #servicios div .card h3 {
+    color: #333;
+}
+  
+main #servicios div .card p {
+    color: #666;
+}
+  
+
+footer {
+    background-color: #f6894eda;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer_container{
+    /*width: 100%;  /*lleva a todos*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rebeccapurple;
+    font-size: 1,2em;
+}
+.contacto {
+    width: 30%;
+    margin-bottom: 20px;
+}
+  
+.derechos {
+    width: 100%;
+    text-align: center;
+}
